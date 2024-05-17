@@ -1,0 +1,44 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+const EXPERIENCIE = [
+  {
+    date: "Febrero 2024",
+    title: "Analista de sistemas de comisiones",
+    company: "Grupo sion",
+    description:
+      "Responsable de la plataforma comisiones, muestra de contenido datos como tambien de generar reportes y analisis de comisiones",
+    //link: "https://twitch.tv/midudev",
+  },
+  {
+    date: "Septiembre 2023",
+    title: "Desarrollador web",
+    company: "Consulter home",
+    description:
+      "Desarrollador web, implementacion del sistema de cuestionarios y generacion de reporte de resultado de los test implementados",
+  },
+  {
+    date: "Julio 2022",
+    title: "Desarrollador software",
+    company: "A-plus security",
+    description:
+      "Responsable del sistema de inscripciones, implementación de reportes y resultado de movimientos que se genera a travez de sistema.",
+  },
+  {
+    date: "Octubre 2021",
+    title: "Desarrollador web",
+    company: "Precision wall",
+    description:
+      "Responsable del desarrollador web, implementacion de componentes y utilidades, encargado de soporte.",
+  },
+]
+---
+
+<ol class="relative mt-16">
+  {
+    EXPERIENCIE.map((experiencie) => (
+      <li class="">
+        <ExperienceItem {...experiencie} />
+      </li>
+    ))
+  }
+</ol>
