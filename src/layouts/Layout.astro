@@ -26,6 +26,20 @@ const { description, title } = Astro.props;
     <meta property="twitter:image" content="https://stivenlovera.dev/144.png" />
 
     <ViewTransitions />
+
+    <!-- Google tag (gtag.js) -->
+    <script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-QSQQ99Q61F"
+    ></script>
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-QSQQ99Q61F");
+    </script>
+
   </head>
 
   <body class="relative text-black dark:text-white">
