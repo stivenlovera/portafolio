@@ -1,4 +1,6 @@
 ---
+import NextJS from "./icons/Whatsapp.astro";
+import Mail from "./icons/Mail.astro";
 const personalImageAlt = "Stiven lovera";
 ---
 
@@ -9,14 +11,29 @@ const personalImageAlt = "Stiven lovera";
     class="[&>p]:mb-4 [&>p>strong]:text-yellow-500 dark:[&>p>strong]:text-yellow-100 [&>p>strong]:font-normal [&>p>strong]:font-mono text-pretty order-2 md:order-1"
   >
     <p>
-      Me llamo Ali stiven, Empecé en la desarrollo de software hace 7 años realizando
-      prácticas en mi etapa de estudiante y posteriormente terminando mi
-      carrera. 
+      Me llamo Ali stiven, Empecé en la desarrollo de software hace 7 años
+      realizando prácticas en mi etapa de estudiante y posteriormente terminando
+      mi carrera.
     </p>
 
     <p>
-      En estos últimos 5 años participando y desarrollando en múltiples proyectos.
+      En estos últimos 5 años participando y desarrollando en múltiples
+      proyectos.
     </p>
+    <ul class="mb-2 gap-x-2">
+      <li class="p-1">
+        <span class={`flex gap-x-2 rounded-full text-xs text-white py-1 px-2 `}>
+          <NextJS class="size-6" />
+          <p class="text-base">+591 75679775</p>
+        </span>
+      </li>
+      <li class="p-1">
+        <span class={`flex gap-x-2 rounded-full text-xs text-white py-1 px-2 `}>
+          <Mail class="size-6" />
+          <p class="text-base">contact@stivenlovera.dev</p>
+        </span>
+      </li>
+    </ul>
   </div>
 
   <img
